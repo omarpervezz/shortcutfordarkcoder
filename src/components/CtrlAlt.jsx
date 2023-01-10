@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Letter from "./Letter";
-const CtrlAlt = ({ letter, text }) => {
+const CtrlAlt = ({ keyName, letter, text }) => {
   const [value, setValue] = useState(text);
   const inputRef = useRef(null);
   const textInformation = useRef(null);
@@ -19,7 +19,7 @@ const CtrlAlt = ({ letter, text }) => {
       <div className="ctrl_alt_key">
         <div className="shortKey_container">
           <h3 style={{ display: "flex", flexDirection: "row" }}>
-            <span className="key___">Ctr + Alt +</span>
+            <span className="key___">{keyName}</span>
             <Letter letter={letter} className="letter" />
             <span ref={textInformation} className="key_information">
               <b>=</b>
