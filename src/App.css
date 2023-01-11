@@ -427,12 +427,13 @@ a {
   }
 }
 button {
-  background: green;
+  background: #202520;
   padding: 0.1rem 1rem;
   outline: none;
   border: none;
   color: white;
-  /* font-size: .7rem; */
+  font-size: 1.2rem;
   border-radius: 0.7rem;
   cursor: pointer;
+  margin-left: 0.4rem;
 }
